@@ -1,0 +1,10 @@
+@media only screen and (min-width: 700px) {
+  .BurgerMenu {
+    display: none;
+  }
+  .BurgerMenuItems {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,81 @@
+@use 'DesktopSizeMedia';
+@use 'MobileSizeMedia';
+@use 'ScrollAnimation';
+@use 'GlobalSizes';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p, .mg, li{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.navholder{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.BurgerMenu{
+    position: absolute;
+}
+
+
+
+
+.RegisterB{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.RegisterA{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.LoginA{
+    color: #a37df6;
+}
+.Buzzthrough{
+    font-size: 24px;
+}
+
+#myList {
+    display: none;
+    animation-name: transition;
+    animation-duration: 2s;
+    
+}
+@keyframes transition{
+    from{
+        margin-top: -250px;
+
+    
+    
+    }
+
+    to{
+
+        margin-top: 0px;
+    }
+}

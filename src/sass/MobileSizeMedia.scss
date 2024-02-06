@@ -1,0 +1,27 @@
+@media only screen and (max-width: 700px){
+
+    .BurgerMenuItems{
+        display: none;
+    }
+    .BurgerMenu{
+        display: flex;
+        right: 22.5px;
+        top: 22.5px;
+        height: 55px;
+        width: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+    .burgersvg{
+        height: 50px;
+        width: 50px;    
+    }
+    
+    button{
+        background-color: inherit;
+        border: none;
+        height: 100%;
+        width: 100%;
+        cursor: pointer ;
+    }
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media only screen and (min-width: 700px) {
+  .BurgerMenu {
+    display: none;
+  }
+  .BurgerMenuItems {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .BurgerMenuItems {
+    display: none;
+  }
+  .BurgerMenu {
+    display: flex;
+    right: 22.5px;
+    top: 22.5px;
+    height: 55px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+  }
+  .burgersvg {
+    height: 50px;
+    width: 50px;
+  }
+  button {
+    background-color: inherit;
+    border: none;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+nav {
+  height: 100px;
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navholder {
+  width: 95%;
+}
+
+li {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li a {
+  color: white;
+}
+li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  height: 35px;
+  width: 80%;
+}
+
+ul {
+  height: 280px;
+  background-color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p, .mg, li {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.navholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BurgerMenu {
+  position: absolute;
+}
+
+.RegisterB {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.RegisterA {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.LoginA {
+  color: #a37df6;
+}
+
+.Buzzthrough {
+  font-size: 24px;
+}
+
+#myList {
+  display: none;
+  animation-name: transition;
+  animation-duration: 2s;
+}
+
+@keyframes transition {
+  from {
+    margin-top: -250px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
