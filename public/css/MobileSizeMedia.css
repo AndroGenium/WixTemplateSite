@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .BurgerMenuItems {
     display: none;
   }
@@ -21,5 +21,237 @@
     height: 100%;
     width: 100%;
     cursor: pointer;
+  }
+  h1 {
+    font-size: 80px;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .sectioncontent-1 {
+    height: fit-content;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sectionregister1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #635cfb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .section-2 {
+    width: 100vw;
+    background-color: black;
+    height: 10600px;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+  .textdiv {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1500px;
+  }
+  .textdiv .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textdiv .text .p1 {
+    font-size: 55px;
+  }
+  .textdiv .text .p2 {
+    font-size: 28px;
+  }
+  .textdiv .text .p3 {
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .gallery {
+    flex-direction: column;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .picturecentral {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .picturecentral .pictures {
+    height: 100%;
+    width: 580px;
+    position: relative;
+  }
+  .gallery .picturecentral .pictures img {
+    position: absolute;
+  }
+  .gallery .picturecentral .pictures .img1 {
+    right: 250px;
+  }
+  .gallery .picturecentral .pictures .img2 {
+    right: 0px;
+    top: 350px;
+  }
+  .gallery .picturecentral .pictures .img3 {
+    right: 300px;
+    top: 700px;
+  }
+  .gallery .textdiv {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1800px;
+  }
+  .gallery .textdiv .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery .textdiv .text .p1 {
+    font-size: 55px;
+  }
+  .gallery .textdiv .text .p2 {
+    font-size: 28px;
+  }
+  .gallery .textdiv .text .p3 {
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 1035px) {
+  h1 {
+    font-size: 120px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 110px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 875px) {
+  h1 {
+    font-size: 100px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 90px;
+    font-weight: normal;
+  }
+  .spinningskull img {
+    height: 400px;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 715px) {
+  h1 {
+    font-size: 80px;
+    font-weight: normal;
+  }
+  .spinningskull img {
+    height: 300px;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 70px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 560px) {
+  h1 {
+    font-size: 60px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: flex-start;
+  }
+  .spinningskullholder .spinningskull img {
+    height: 250px;
+    width: 250px;
+  }
+  .spinningskullholder .spinningskull p {
+    font-size: 12px;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 250px) {
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
   }
 }

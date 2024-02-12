@@ -35,3 +35,35 @@ ul {
   height: 280px;
   background-color: black;
 }
+
+.sectioncontent-1 {
+  height: fit-content;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-1 {
+  width: 100vw;
+  background-color: black;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.spinningskullholder {
+  display: flex;
+  width: 96%;
+}
+.spinningskullholder .spinningskull {
+  width: max-content;
+  height: max-content;
+  display: flex;
+}
+.spinningskullholder .spinningskull .pdiv {
+  display: flex;
+  align-items: flex-end;
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 730px) {
   .BurgerMenu {
     display: none;
   }
@@ -6,5 +6,90 @@
     display: flex;
     gap: 20px;
     align-items: center;
+  }
+  h1 {
+    font-size: 130px;
+    font-weight: normal;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .sectionregister1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #635cfb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .section-1 {
+    width: 100vw;
+    background-color: black;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-2 {
+    width: 100vw;
+    background-color: black;
+    height: 10000px;
+  }
+  .spinningskullholder {
+    justify-content: flex-end;
+  }
+  .gallery {
+    display: flex;
+    height: 1000px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gallery .picturecentral {
+    height: 1000px;
+    width: 45%;
+    position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .picturecentral .pictures img {
+    position: absolute;
+  }
+  .gallery .picturecentral .pictures .img1 {
+    right: 250px;
+  }
+  .gallery .picturecentral .pictures .img2 {
+    right: 0px;
+    top: 350px;
+  }
+  .gallery .picturecentral .pictures .img3 {
+    right: 300px;
+    top: 700px;
+  }
+  .gallery .textdiv {
+    height: 1000px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+  }
+  .gallery .textdiv .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery .textdiv .text .p1 {
+    font-size: 55px;
+  }
+  .gallery .textdiv .text .p2 {
+    font-size: 28px;
+  }
+  .gallery .textdiv .text .p3 {
+    line-height: 30px;
   }
 }
