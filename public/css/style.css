@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
 @media only screen and (min-width: 730px) {
   .BurgerMenu {
     display: none;
@@ -30,7 +37,7 @@
     font-weight: bold;
   }
   .section-1 {
-    width: 100vw;
+    width: 100%;
     background-color: black;
     height: 580px;
     display: flex;
@@ -38,22 +45,22 @@
     align-items: center;
   }
   .section-2 {
-    width: 100vw;
+    width: 100%;
     background-color: black;
-    height: 10000px;
+    height: fit-content;
   }
   .spinningskullholder {
     justify-content: flex-end;
   }
   .gallery {
     display: flex;
-    height: 1000px;
-    justify-content: space-evenly;
+    height: fit-content;
+    justify-content: center;
     align-items: center;
   }
   .gallery .picturecentral {
-    height: 1000px;
-    width: 45%;
+    height: 870px;
+    width: 572px;
     position: relative;
     position: relative;
     display: flex;
@@ -74,10 +81,11 @@
     top: 700px;
   }
   .gallery .textdiv {
-    height: 1000px;
-    width: 45%;
+    height: 870px;
+    width: 572px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .gallery .textdiv .text {
     display: flex;
@@ -92,6 +100,567 @@
   }
   .gallery .textdiv .text .p3 {
     line-height: 30px;
+  }
+  .section-3 {
+    width: fit-content;
+    background-color: black;
+    height: fit-content;
+  }
+  .texts3 {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ps3 {
+    color: white;
+    font-size: 38px;
+  }
+  .photoholder {
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding-bottom: 50px;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+  .photoholder .mgel {
+    overflow: hidden;
+    height: 700px;
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-shrink: 1;
+  }
+  .photoholder .mgel img {
+    height: 700px;
+    width: 500px;
+    transition: transform 1.4s, opacity 1s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-shrink: 1;
+  }
+  .photoholder .mgel img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .photoholder .s3h {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .photoholder .s3p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .photoholder .s3t {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    height: max-content;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .s4points {
+    width: 1500px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  footer {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer p {
+    color: black;
+  }
+  footer .MLtext {
+    font-size: 32px;
+    display: flex;
+  }
+  .MailingList {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+    width: 100%;
+  }
+  .ML {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    justify-content: center;
+  }
+  .InputML {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .finger {
+    display: flex;
+    gap: 20px;
+  }
+  input {
+    height: 40px;
+    width: 350px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .CompanyInfo {
+    display: flex;
+    height: 40%;
+    width: 93%;
+    border-bottom: 1px solid black;
+  }
+  .copyright {
+    width: 93%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+  .copyright p {
+    font-size: 15px;
+  }
+  .Email {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .Website {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .Location {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .texts3 {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ps3 {
+    color: white;
+    font-size: 38px;
+  }
+  .photoholder {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .photoholder .mgel {
+    overflow: hidden;
+    height: 700px;
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .photoholder .mgel img {
+    height: 700px;
+    width: 500px;
+    transition: transform 1.4s, opacity 1s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .photoholder .mgel img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .photoholder .s3h {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .photoholder .s3p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .photoholder .s3t {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    height: max-content;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .s4points {
+    width: 1450px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .s4points {
+    width: 1400px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .s4points {
+    width: 1350px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .s4points {
+    width: 1300px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .gallery {
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .picturecentral {
+    height: 870px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .picturecentral .pictures {
+    height: 100%;
+    width: 580px;
+    position: relative;
+  }
+  .gallery .picturecentral .pictures img {
+    position: absolute;
+  }
+  .gallery .picturecentral .pictures .img1 {
+    right: 250px;
+  }
+  .gallery .picturecentral .pictures .img2 {
+    right: 0px;
+    top: 350px;
+  }
+  .gallery .picturecentral .pictures .img3 {
+    right: 300px;
+    top: 700px;
+  }
+  .gallery .textdiv {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0;
+  }
+  .gallery .textdiv .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery .textdiv .text .p1 {
+    font-size: 55px;
+  }
+  .gallery .textdiv .text .p2 {
+    font-size: 28px;
+  }
+  .gallery .textdiv .text .p3 {
+    line-height: 30px;
+  }
+  .section-2 {
+    width: 100vw;
+    background-color: black;
+    height: fit-content;
+    margin-top: 200px;
+  }
+  .s4points {
+    width: 1250px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .s4points {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .s4points {
+    width: 1150px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .s4points {
+    width: 1100px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .s4points {
+    width: 1050px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .s4points {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1035px) {
+  h1 {
+    font-size: 120px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .s4points {
+    width: 950px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 110px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+  .s4points {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .s4points {
+    width: fit-content;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 875px) {
+  h1 {
+    font-size: 100px;
+    font-weight: normal;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 850px) {
+  footer {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer p {
+    color: black;
+  }
+  footer .MLtext {
+    font-size: 32px;
+    display: flex;
+  }
+  .MailingList {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+    width: 100%;
+  }
+  .ML {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    justify-content: center;
+  }
+  .InputML {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .finger {
+    display: flex;
+    gap: 20px;
+  }
+  input {
+    height: 40px;
+    width: 350px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .CompanyInfo {
+    display: flex;
+    height: fit-content;
+    width: 93%;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .copyright {
+    width: 93%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+  .copyright p {
+    font-size: 15px;
+  }
+  .Email {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .Website {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .Location {
+    width: 33.3333333333%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 90px;
+    font-weight: normal;
+  }
+  .spinningskull img {
+    height: 400px;
+  }
+  .spinningskullholder {
+    justify-content: center;
+  }
+  .gallery {
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery .picturecentral {
+    height: 870px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .picturecentral .pictures {
+    height: 100%;
+    width: 580px;
+    position: relative;
+  }
+  .gallery .picturecentral .pictures img {
+    position: absolute;
+  }
+  .gallery .picturecentral .pictures .img1 {
+    right: 250px;
+  }
+  .gallery .picturecentral .pictures .img2 {
+    right: 0px;
+    top: 350px;
+  }
+  .gallery .picturecentral .pictures .img3 {
+    right: 300px;
+    top: 700px;
+  }
+  .gallery .textdiv {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0;
+  }
+  .gallery .textdiv .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery .textdiv .text .p1 {
+    font-size: 55px;
+  }
+  .gallery .textdiv .text .p2 {
+    font-size: 28px;
+  }
+  .gallery .textdiv .text .p3 {
+    line-height: 30px;
+  }
+  .section-2 {
+    width: 100%;
+    background-color: black;
+    height: fit-content;
+    margin-top: 200px;
   }
 }
 @media only screen and (max-width: 730px) {
@@ -146,48 +715,30 @@
     font-size: 16px;
     font-weight: bold;
   }
-  .section-2 {
-    width: 100vw;
-    background-color: black;
-    height: 10600px;
+  .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 715px) {
+  h1 {
+    font-size: 80px;
+    font-weight: normal;
+  }
+  .spinningskull img {
+    height: 300px;
   }
   .spinningskullholder {
     justify-content: center;
   }
-  .textdiv {
-    height: 1000px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 1500px;
-  }
-  .textdiv .text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .textdiv .text .p1 {
-    font-size: 55px;
-  }
-  .textdiv .text .p2 {
-    font-size: 28px;
-  }
-  .textdiv .text .p3 {
-    line-height: 30px;
-  }
-}
-@media only screen and (max-width: 1300px) {
   .gallery {
     flex-direction: column;
     display: flex;
-    height: 1000px;
+    height: fit-content;
     justify-content: center;
     align-items: center;
   }
   .gallery .picturecentral {
-    height: 1000px;
+    height: 870px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -212,13 +763,12 @@
     top: 700px;
   }
   .gallery .textdiv {
-    height: 1000px;
+    height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 1800px;
+    margin: 120px 0;
   }
   .gallery .textdiv .text {
     display: flex;
@@ -234,56 +784,11 @@
   .gallery .textdiv .text .p3 {
     line-height: 30px;
   }
-}
-@media only screen and (max-width: 1035px) {
-  h1 {
-    font-size: 120px;
-    font-weight: normal;
-  }
-  .spinningskullholder {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 950px) {
-  h1 {
-    font-size: 110px;
-    font-weight: normal;
-  }
-  .spinningskullholder {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 875px) {
-  h1 {
-    font-size: 100px;
-    font-weight: normal;
-  }
-  .spinningskullholder {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 90px;
-    font-weight: normal;
-  }
-  .spinningskull img {
-    height: 400px;
-  }
-  .spinningskullholder {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 715px) {
-  h1 {
-    font-size: 80px;
-    font-weight: normal;
-  }
-  .spinningskull img {
-    height: 300px;
-  }
-  .spinningskullholder {
-    justify-content: center;
+  .section-2 {
+    width: 100vw;
+    background-color: black;
+    height: fit-content;
+    margin-top: 200px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -292,6 +797,11 @@
     font-weight: normal;
   }
   .spinningskullholder {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .MLtext {
     justify-content: center;
   }
 }
@@ -354,7 +864,7 @@
 nav {
   height: 100px;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,14 +901,14 @@ ul {
 
 .sectioncontent-1 {
   height: fit-content;
-  width: 95vw;
+  width: 95%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .section-1 {
-  width: 100vw;
+  width: 100%;
   background-color: black;
   height: fit-content;
   display: flex;
@@ -421,10 +931,78 @@ ul {
   align-items: flex-end;
 }
 
+.section-3 {
+  margin-top: 250px;
+}
+
+.section-4 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: fit-content;
+  width: fit-content;
+}
+.section-4 svg {
+  height: 70px;
+  transform: rotate(90deg);
+}
+.section-4 .s4h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.section-4 .s4h p {
+  font-size: 55px;
+}
+.section-4 .s4points {
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+}
+.section-4 .s4points .s4point {
+  width: 220px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-4 .s4points .s4point .s4svgdiv {
+  width: 100%;
+}
+.section-4 .s4points .s4point .pointh {
+  font-size: 110px;
+  width: 100%;
+}
+.section-4 .s4points .s4point .pointp {
+  font-size: 25px;
+}
+.section-4 .s4buttondiv {
+  margin-top: 100px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  flex-wrap: wrap;
+}
+.section-4 .s4buttondiv p {
+  font-size: 24px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 p, .mg, li {
@@ -494,4 +1072,8 @@ h1, h5 {
   color: white;
   font-size: 16px;
   font-weight: bold;
+}
+
+body {
+  background-color: black;
 }

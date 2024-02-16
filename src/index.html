@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaci shedis saxinkleshi</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script>
         function toggleListDisplay() {
             var myList = document.getElementById('myList');
@@ -17,6 +20,24 @@
                 }
             }
         }
+
+        window.addEventListener('resize', function() {
+            var myList = document.getElementById('myList');
+            var burgerButton = document.querySelector('.burgerbutton');
+            
+            // Check if screen width is greater than 730px
+            if (window.innerWidth >= 730) {
+                // Hide the burger menu
+                if (myList) {
+                    myList.style.display = 'none';
+                }
+            }
+
+            // Show the burger button if it was hidden
+            if (burgerButton && burgerButton.style.display === 'none') {
+                burgerButton.style.display = 'block';
+            }
+        });
     </script>
 </head>
 <body>
@@ -33,12 +54,11 @@
                 <button class="RegisterB"><a href="./Register.html" class="RegisterA">Register Now</a></button>
             </div>
             <div class="BurgerMenu">
-                <button class="burgerbutton" onclick="toggleListDisplay()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burgersvg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
-                            
+                <button class="burgerbutton" onclick="toggleListDisplay()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burgersvg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>              
             </div>
-
         </div>    
     </nav>
+    
     <ul id="myList">
         <li><span class="mg"><a href="">About</a></span></li>
         <li><span class="mg"><a href="">Speakers</a></span></li>
@@ -46,28 +66,25 @@
         <li><span class="mgg"><a href="./Login.html">Log in</a></span></li>
         <li><span class="mgg"><a href="./Register.html">Register Now</a></span></li>
     </ul>
+
     <main>
+
         <div class="section section-1">
             <div class="sectioncontent sectioncontent-1">
                 <h1>The Future of <br>Digital Marketing</h1>
                 <h5>Trends and Forecasts <br>for 2035 and Beyond</h5>
                 <button class="sectionregister1"><a href="./Register.html">Register Now</a></button>
-
             </div>
-            
-
-
-
-
-
         </div>
-        <div class="section section-2">
+
             <div class="spinningskullholder">
                 <div class="spinningskull">    
                     <img src="https://static.wikia.nocookie.net/696b1691-5137-49c2-8a34-9616fc5e9b83" alt="">
                     <div class="pdiv"><p>Live Webinar, <br>5 Nov 2035, <br>6pm-8pm</p></div>
                 </div>
             </div>
+
+        <div class="section section-2">
             <div class="gallery">    
                 <div class="picturecentral">
                     <div class="pictures">
@@ -84,34 +101,91 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
 
+        <div class="section section-3">
+            <div class="texts3">
+                <p class="ps3">Meet the Speakers</p>
+            </div>
+            <div class="photoholder">
+                <div>
+                    <div class="mgel"><img src="./assets/308ea0zdzd.png" alt=""></div>
+                    <div class="s3t">
+                        <p class="s3h">Spongebob</p>
+                        <p class="s3p">Head of Digital Marketing at Buzzthrough</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mgel"><img src="./assets/308ea0zdd.png" alt=""></div>
+                    <div class="s3t">
+                        <p class="s3h">Patrick</p>
+                        <p class="s3p">Senior Marketing Strategist at Volve</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mgel"><img src="./assets/308ea0mgel.png" alt=""></div>
+                    <div class="s3t">
+                        <p class="s3h">Squidward</p>
+                        <p class="s3p">Buisness Analyst on Targo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="section section-4">
+            <div class="s4h">
+                <p class="s4ht">What You Will Learn</p>
+            </div>
+            <div class="s4points">
+                <div class="s4point">
+                    <div class="s4svgdiv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#39d15a" d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></div></svg>
+                    <p class="pointh">01</p>
+                    <p class="pointp">Branding strategies <br> in the age of the <br> metaverse</p>
+                </div>
+                <div class="s4point">
+                    <div class="s4svgdiv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#6060fc" d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></div></svg>
+                    <p class="pointh">02</p>
+                    <p class="pointp">How to use VR and <br> AR technology to <br> generate sales</p>
+                </div>
+                <div class="s4point">
+                    <div class="s4svgdiv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#842ff0" d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></div></svg>
+                    <p class="pointh">03</p>
+                    <p class="pointp">Tips and tricks for<br> the  latest digital<br> platforms</p>
+                </div>
+            </div>
+            <div class="s4buttondiv">     
+                <p>Ready to create a buzz?</p>
+                <button class="sectionregister1"><a href="./Register.html">Register Now</a></button>
+            </div>
+        </div> 
 
     </main>
+    <footer>
+        <div class="MailingList">
+            <div class="ML"> 
+                <p class="MLtext">Join our mailing list</p>
+                <div class="InputML">
+                    <input type="text">
+                    <button class="sectionregister1"><a href="">Sign up</a></button>
+                </div>
+            </div>       
+        </div>
+        <div class="CompanyInfo">
+            <div class="Email">
+                <p class="Buzzthrough" style="font-weight: bold;">Buzzthrough</p>
+                <p>For any questions please email <br>
+
+                    info@mysite.com</p>
+            </div>
+            <div class="Website">
+                <p>Visit our website</p>
+            </div>
+            <div class="Location">
+                <p>500 Terry Francine Street <br>
+                    San Francisco, CA 94158</p>
+            </div>
+        </div>
+        <div class="copyright"><p>© 2035 by Buzzthrough. Powered and secured by Wix</p></div>
+    </footer>
 </body>
 </html>

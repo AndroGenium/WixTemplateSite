@@ -1,7 +1,7 @@
 nav{
     height: 100px;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -40,7 +40,7 @@ ul{
 
 .sectioncontent-1{
     height: fit-content;
-    width: 95vw;
+    width: 95%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -49,7 +49,7 @@ ul{
 
 
 .section-1{
-    width: 100vw; 
+    width: 100%; 
     background-color: black;
     height: fit-content;
     display: flex;
@@ -80,7 +80,63 @@ ul{
     }
 }
 
+.section-3{
+    margin-top: 250px;
+}
 
 
+.section-4{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: fit-content;
+    svg{
+        height: 70px;
+        transform: rotate(90deg);
+    }
+    .s4h{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{font-size: 55px;}
+        padding: 100px 0;
+    }
+    .s4points{
+        
+        display: flex;
+        gap: 100px;
+        
+        justify-content: space-around;
+        .s4point{
+            .s4svgdiv{width: 100%;}
+            width: 220px;
+            .pointh{font-size: 110px; width: 100%;}
+            .pointp{font-size: 25px;}
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .s4buttondiv{
+        margin-top: 100px;
+        display: flex;
+        width: fit-content;
+        gap: 20px;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        p{
+            font-size: 24px;
+        }
+        flex-wrap: wrap;
+    }
+
+}
 
 

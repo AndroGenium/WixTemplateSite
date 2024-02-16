@@ -9,7 +9,454 @@
 
 }
 
+@mixin flexcc(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+
+
+@media only screen and (max-width:1700px) {
+    .texts3{
+        height: 150px;
+        width: 100%;
+        @include flexcc();
+
+    }
+    .ps3{
+        color: white;
+        font-size: 38px;
+    }
+
+    .photoholder {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 56px;
+        padding-bottom: 50px;
+        
+    
+        .mgel {
+            overflow: hidden;
+            height: 700px;
+            width: 500px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            img {
+                height: 700px;
+                width: 500px;
+                transition: transform 1.4s, opacity 1s;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+    
+            img:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    
+        overflow: hidden;
+        .s3h{font-size: 24px;   
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+        .s3p{font-size: 18px;   
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;}
+        .s3t{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: flex-start;
+            justify-content: center;
+            height: max-content;
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:1500px) {
+    .s4points{
+        width: 1450px;
+    }
+}
+
+@media only screen and (max-width:1450px) {
+    .s4points{
+        width: 1400px;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .s4points{
+        width: 1350px;
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    .s4points{
+        width: 1300px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px){
+
+    .gallery{
+        flex-direction: column;
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        .picturecentral{
+            height: 870px;
+            width: 100%;
+
+            .pictures{
+                height: 100%;
+                width: 580px;
+                position: relative;
+                img{position: absolute;}
+                .img1{right: 250px;}
+                .img2{right: 0px; top: 350px;}
+                .img3{right: 300px;top: 700px;}
+            }
+            display: flex;
+            justify-content: center;
+        }
+        .textdiv{
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 120px 0;
+            .text{
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .p1{font-size: 55px;}
+                .p2{font-size: 28px}
+                .p3{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .section-2{
+        width: 100vw;
+        background-color: black;
+        height: fit-content;
+        margin-top: 200px;
+    }
+.s4points{
+    width: 1250px;
+}
+
+
+}
+
+@media only screen and (max-width:1250px) {
+    .s4points{
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .s4points{
+        width: 1150px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .s4points{
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .s4points{
+        width: 1050px;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .s4points{
+        width: 1000px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1035px){
+
+    h1{
+        font-size: 120px;
+        font-weight: normal;
+    } 
+    .spinningskullholder{
+        
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width:1000px) {
+    .s4points{
+        width: 950px;
+    }
+}
+
+
+@media only screen and (max-width: 950px){
+
+    h1{
+        font-size: 110px;
+        font-weight: normal;
+    }
+    .spinningskullholder{
+        
+        justify-content: center;
+    }
+    .s4points{
+        width: 900px;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 900px){
+    .s4points{
+        width: fit-content;
+        flex-direction: column;
+    }
+    
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 875px){
+
+    h1{
+        font-size: 100px;
+        font-weight: normal;
+    }
+    .spinningskullholder{
+        
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 850px){
+    footer{
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        width: 100%;
+        height: 800px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            color: black;
+    
+        }
+        .MLtext{
+            font-size: 32px;
+            display: flex;
+    
+        }
+    }
+    
+    .MailingList{
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        align-items: center;
+        width: 100%;
+        
+    }
+    
+    .ML{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: fit-content;
+        justify-content: center;
+    }
+    .InputML{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .finger{
+        display: flex;
+        gap: 20px;
+    
+    }
+    
+    input{
+        height: 40px;
+        width: 350px;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid;
+    }
+    
+    .CompanyInfo{
+        display: flex;
+        height: fit-content;
+        width: 93%;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .copyright{
+        p{font-size: 15px;}
+        width: 93%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid black;
+    }
+    
+    .Email{
+        width: 33.33333333333%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    
+    .Website{
+        width: 33.33333333333%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    
+    .Location{
+        width: 33.33333333333%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+    h1{
+        font-size: 90px;
+        font-weight: normal;
+    }
+    .spinningskull{img{height: 400px;}}
+    .spinningskullholder{
+        
+        justify-content: center;
+    }
+
+    .gallery{
+        flex-direction: column;
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        .picturecentral{
+            height: 870px;
+            width: 100%;
+
+            .pictures{
+                height: 100%;
+                width: 580px;
+                position: relative;
+                img{position: absolute;}
+                .img1{right: 250px;}
+                .img2{right: 0px; top: 350px;}
+                .img3{right: 300px;top: 700px;}
+            }
+            display: flex;
+            justify-content: center;
+        }
+        .textdiv{
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 120px 0;
+            .text{
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .p1{font-size: 55px;}
+                .p2{font-size: 28px}
+                .p3{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .section-2{
+        width: 100%;
+        background-color: black;
+        height: fit-content;
+        margin-top: 200px;
+    }
+
+
+
+
+
+}
 
 @media only screen and (max-width: 730px){
 
@@ -65,52 +512,37 @@
     
         
     }
-    .section-2{
-        width: 100vw;
-        background-color: black;
-        height: 10600px;
-    }
     .spinningskullholder{
         
         justify-content: center;
     }
 
-    .textdiv{
-        height: 1000px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 1500px;
-        .text{
-
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            .p1{font-size: 55px;}
-            .p2{font-size: 28px}
-            .p3{
-                line-height: 30px;
-            }
-        }
-    }
-
+   
 
 }
 
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 715px){
 
+    h1{
+        font-size: 80px;
+        font-weight: normal;
+    }
+    .spinningskull{img{height: 300px;}}
+    .spinningskullholder{
+        
+        justify-content: center;
+    }
+
+    
     .gallery{
         flex-direction: column;
         display: flex;
-        height: 1000px;
+        height: fit-content;
         justify-content: center;
         align-items: center;
         .picturecentral{
-            height: 1000px;
+            height: 870px;
             width: 100%;
 
             .pictures{
@@ -126,13 +558,12 @@
             justify-content: center;
         }
         .textdiv{
-            height: 1000px;
+            height: fit-content;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: absolute;
-            top: 1800px;
+            margin: 120px 0;
             .text{
 
                 display: flex;
@@ -147,83 +578,14 @@
             }
         }
     }
-
-}
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1035px){
-
-    h1{
-        font-size: 120px;
-        font-weight: normal;
-    } 
-    .spinningskullholder{
-        
-        justify-content: center;
+    .section-2{
+        width: 100vw;
+        background-color: black;
+        height: fit-content;
+        margin-top: 200px;
     }
 
-}
 
-
-@media only screen and (max-width: 950px){
-
-    h1{
-        font-size: 110px;
-        font-weight: normal;
-    }
-    .spinningskullholder{
-        
-        justify-content: center;
-    } 
-
-}
-
-
-@media only screen and (max-width: 875px){
-
-    h1{
-        font-size: 100px;
-        font-weight: normal;
-    }
-    .spinningskullholder{
-        
-        justify-content: center;
-    } 
-
-}
-
-
-@media only screen and (max-width: 800px){
-
-    h1{
-        font-size: 90px;
-        font-weight: normal;
-    }
-    .spinningskull{img{height: 400px;}}
-    .spinningskullholder{
-        
-        justify-content: center;
-    }
-
-}
-
-@media only screen and (max-width: 715px){
-
-    h1{
-        font-size: 80px;
-        font-weight: normal;
-    }
-    .spinningskull{img{height: 300px;}}
-    .spinningskullholder{
-        
-        justify-content: center;
-    }
 
 }
 
@@ -240,6 +602,14 @@
 
 }
 
+@media only screen and (max-width: 574px){
+
+    .MLtext{
+        justify-content: center;
+    }
+}
+
+
 @media only screen and (max-width: 560px){
 
     h1{
@@ -250,7 +620,6 @@
         
         justify-content: center;
     } 
-
 }
 
 
@@ -263,7 +632,7 @@
     .spinningskullholder{
         
         justify-content: center;
-    } 
+    }
 
 }
 
@@ -305,7 +674,7 @@
     .spinningskullholder{
         
         justify-content: center;
-    } 
+    }
 
 }
 
@@ -330,9 +699,8 @@
         font-weight: normal;
     } 
 
+    
+
 }
-
-
-
 
 

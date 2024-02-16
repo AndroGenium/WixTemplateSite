@@ -1,7 +1,7 @@
 nav {
   height: 100px;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,14 +38,14 @@ ul {
 
 .sectioncontent-1 {
   height: fit-content;
-  width: 95vw;
+  width: 95%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .section-1 {
-  width: 100vw;
+  width: 100%;
   background-color: black;
   height: fit-content;
   display: flex;
@@ -66,4 +66,68 @@ ul {
 .spinningskullholder .spinningskull .pdiv {
   display: flex;
   align-items: flex-end;
+}
+
+.section-3 {
+  margin-top: 250px;
+}
+
+.section-4 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: fit-content;
+  width: fit-content;
+}
+.section-4 svg {
+  height: 70px;
+  transform: rotate(90deg);
+}
+.section-4 .s4h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.section-4 .s4h p {
+  font-size: 55px;
+}
+.section-4 .s4points {
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+}
+.section-4 .s4points .s4point {
+  width: 220px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-4 .s4points .s4point .s4svgdiv {
+  width: 100%;
+}
+.section-4 .s4points .s4point .pointh {
+  font-size: 110px;
+  width: 100%;
+}
+.section-4 .s4points .s4point .pointp {
+  font-size: 25px;
+}
+.section-4 .s4buttondiv {
+  margin-top: 100px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  flex-wrap: wrap;
+}
+.section-4 .s4buttondiv p {
+  font-size: 24px;
 }
