@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaci shedis saxinkleshi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        function toggleListDisplay() {
+            var myList = document.getElementById('myList');
+            if (myList) {
+                if (myList.style.display === 'none' || myList.style.display === '') {
+                    myList.style.display = 'block';
+
+                } else {                   
+                    myList.style.display = 'none';
+                }
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var myList = document.getElementById('myList');
+            var burgerButton = document.querySelector('.burgerbutton');
+            
+            // Check if screen width is greater than 730px
+            if (window.innerWidth >= 730) {
+                // Hide the burger menu
+                if (myList) {
+                    myList.style.display = 'none';
+                }
+            }
+
+            // Show the burger button if it was hidden
+            if (burgerButton && burgerButton.style.display === 'none') {
+                burgerButton.style.display = 'block';
+            }
+        });
+    </script>
+</head>
+<body class="body">
+    <nav class="nav">
+        <div class="navholder">
+            <div class="HomeLink">
+                <a href="./index.html"><p class="Buzzthrough" style="font-weight: bold;">Buzzthrough</p></a>
+            </div>
+            <div class="BurgerMenuItems">
+                <p><a href="./index.html#About">About</a></p>
+                <p><a href="./index.html#Speakers">Speakers</a> </p>
+                <p><a href="./index.html#Topics">Topics</a></p>
+                <a href="./Login.html" class="LoginA">Log In</a>
+                <button class="RegisterB"><a href="./Register.html" class="RegisterA">Register Now</a></button>
+            </div>
+            <div class="BurgerMenu">
+                <button class="burgerbutton" onclick="toggleListDisplay()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burgersvg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>              
+            </div>
+        </div>    
+    </nav>
+    <ul id="myList">
+        <li><span class="mg"><a href="./index.html#About">About</a></span></li>
+        <li><span class="mg"><a href="./index.html#Speakers">Speakers</a></span></li>
+        <li><span class="mg"><a href="./index.html#Topics">Topics</a></span></li>
+        <li><span class="mgg"><a href="./Login.html">Log in</a></span></li>
+        <li><span class="mgg"><a href="./Register.html">Register Now</a></span></li>
+    </ul>
+    
+    <form>
+        <h1>Login</h1>
+        <div class="FormName">        
+            <div class="FirstName">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="">
+            </div>   
+            <div class="LastName">            
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="">
+            </div>
+        
+        </div>
+        <div class="FormEmail">
+            <label for="wemail">Email:</label>
+            <input type="text" id="wemail" name="wemail" value=""></div>
+        <div class="FormCname">
+            <label for="cname">Password:</label>
+            <input type="text" id="cname" name="cname" value="">
+        </div>
+
+
+        <button class="sectionregister1 FormSubmit"><a href="">Submit</a></button>
+        
+        
+        
+
+    </form>
+
+    <footer>
+        <div class="MailingList">
+            <div class="ML"> 
+                <p class="MLtext">Join our mailing list</p>
+                <div class="InputML">
+                    <input type="text">
+                    <button class="sectionregister1"><a href="">Sign up</a></button>
+                </div>
+            </div>       
+        </div>
+        <div class="CompanyInfo">
+            <div class="Email">
+                <p class="Buzzthrough" style="font-weight: bold;">Buzzthrough</p>
+                <p>For any questions please email <br>
+
+                    info@mysite.com</p>
+            </div>
+            <div class="Website">
+                <p>Visit our website</p>
+            </div>
+            <div class="Location">
+                <p>500 Terry Francine Street <br>
+                    San Francisco, CA 94158</p>
+            </div>
+        </div>
+        <div class="copyright"><p>© 2035 by Buzzthrough. Powered and secured by Wix</p></div>
+    </footer>
+</body>
+</html>

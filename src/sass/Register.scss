@@ -80,3 +80,109 @@
         }
         
     } 
+
+
+    form{
+        margin-top: 150px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+        padding: 20px;
+        width: fit-content;
+        h1{
+            font-size: 48px;
+
+
+
+        }
+
+        .FormEmail{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            width: 100%;
+            input{
+                width: 100%;
+                height: 48px;
+            }
+        }
+
+        .FormCname{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            width: 100%;
+            input{
+                width: 100%;
+                height: 48px;
+            } 
+        }
+
+        .FormCountry{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            width: 100%;
+            input{
+                width: 100%;
+                height: 48px;
+            }
+        }
+
+        .FormName{
+            height: fit-content;
+            display: flex;
+            gap: 30px;
+            .FirstName{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                label{
+                    text-decoration: none;
+                    font-family: 'Roboto', sans-serif;
+                    color: white;
+                }
+                input{
+                    width: 260px;
+                    height: 48px;
+                }
+                
+            }
+            .LastName{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                input{
+                    width: 260px;
+                    height: 48px;
+                }
+                label{
+                    text-decoration: none;
+                    font-family: 'Roboto', sans-serif;
+                    color: white;
+                }
+                
+            }
+        }
+        color: white;
+        input{
+            color: white;
+        border:1px solid white;
+                                    
+        }
+    }
+
+
+    label{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+
+
+.FormSubmit{
+    width: 100%;
+    margin-top: 20px;
+}

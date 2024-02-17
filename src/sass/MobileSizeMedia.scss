@@ -591,6 +591,28 @@
 
 @media only screen and (max-width: 640px){
 
+    .FormName{
+        flex-direction: column;
+        width: 100%;
+
+        .FirstName{
+            #fname{
+                width: 100%;
+            }
+
+            
+        }
+
+        .LastName{
+            #lname{
+                width: 100%;
+            }
+
+            
+        }
+
+    }
+
     h1{
         font-size: 70px;
         font-weight: normal;
