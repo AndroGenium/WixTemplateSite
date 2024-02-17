@@ -131,3 +131,11 @@ ul {
 .section-4 .s4buttondiv p {
   font-size: 24px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.BurgerMenuItems p a {
+  color: white;
+}

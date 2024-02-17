@@ -995,6 +995,14 @@ ul {
   font-size: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.BurgerMenuItems p a {
+  color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
