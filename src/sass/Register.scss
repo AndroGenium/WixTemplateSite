@@ -1,0 +1,82 @@
+.body{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RegisterEnter{
+    width: fit-content;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    .RegisterEvent{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        height: fit-content;
+        gap: 20px;
+        align-items: flex-start;
+        .EventTiny{
+            font-size: 13px;
+        }
+
+        .EventHeader{
+            font-size: 58px;
+        }
+        
+    }
+}
+
+.RegisterIMG{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 50px;
+}
+
+.RegisterTime{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    .TimeBig{
+        font-size: 34px;
+    }
+}
+
+
+
+.AboutTheEvent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    button{
+        margin-top: 20px;
+    }
+  
+}  .TimeBig{
+        font-size: 34px;
+    }
+
+    .TimeSmall{
+        font-size: 14px;
+    }
+
+
+    .RegisterShare{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        button{
+            margin-top: 20px;
+        }
+        
+    } 

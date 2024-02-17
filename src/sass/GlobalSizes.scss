@@ -149,3 +149,12 @@ html{
         color: white;
     }}
 }
+
+.ShareIcons{
+    svg{
+        height: 20px;
+    }
+    
+    display: flex;
+    gap: 40px;
+}

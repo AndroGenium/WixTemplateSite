@@ -1003,6 +1003,14 @@ html {
   color: white;
 }
 
+.ShareIcons {
+  display: flex;
+  gap: 40px;
+}
+.ShareIcons svg {
+  height: 20px;
+}
+
 * {
   margin: 0px;
   padding: 0px;

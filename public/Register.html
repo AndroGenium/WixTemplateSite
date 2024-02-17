@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaci shedis saxinkleshi</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script>
         function toggleListDisplay() {
             var myList = document.getElementById('myList');
@@ -17,34 +21,111 @@
                 }
             }
         }
+
+        window.addEventListener('resize', function() {
+            var myList = document.getElementById('myList');
+            var burgerButton = document.querySelector('.burgerbutton');
+            
+            // Check if screen width is greater than 730px
+            if (window.innerWidth >= 730) {
+                // Hide the burger menu
+                if (myList) {
+                    myList.style.display = 'none';
+                }
+            }
+
+            // Show the burger button if it was hidden
+            if (burgerButton && burgerButton.style.display === 'none') {
+                burgerButton.style.display = 'block';
+            }
+        });
     </script>
 </head>
-<body>
+<body class="body">
     <nav class="nav">
         <div class="navholder">
             <div class="HomeLink">
-                <p class="Buzzthrough">Buzzthrough</p>
+                <p class="Buzzthrough" style="font-weight: bold;">Buzzthrough</p>
             </div>
             <div class="BurgerMenuItems">
-                <p>About</p>
-                <p> Speakers</p>
-                <p>Topics</p>
+                <p><a href="./index.html#About">About</a></p>
+                <p><a href="./index.html#Speakers">Speakers</a> </p>
+                <p><a href="./index.html#Topics">Topics</a></p>
                 <a href="./Login.html" class="LoginA">Log In</a>
                 <button class="RegisterB"><a href="./Register.html" class="RegisterA">Register Now</a></button>
             </div>
             <div class="BurgerMenu">
-                <button class="burgerbutton" onclick="toggleListDisplay()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burgersvg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
-                            
+                <button class="burgerbutton" onclick="toggleListDisplay()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burgersvg"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>              
             </div>
-
         </div>    
     </nav>
     <ul id="myList">
-        <li><span class="mg"><a href="">About</a></span></li>
-        <li><span class="mg"><a href="">Speakers</a></span></li>
-        <li><span class="mg"><a href="">Topics</a></span></li>
+        <li><span class="mg"><a href="./index.html#About">About</a></span></li>
+        <li><span class="mg"><a href="./index.html#Speakers">Speakers</a></span></li>
+        <li><span class="mg"><a href="./index.html#Topics">Topics</a></span></li>
         <li><span class="mgg"><a href="./Login.html">Log in</a></span></li>
         <li><span class="mgg"><a href="./Register.html">Register Now</a></span></li>
     </ul>
+    
+    
+    <div class="RegisterEnter">
+        <div class="RegisterEvent">
+            <p class="EventTiny">Mon, Nov 05  |  Marketing Webinar</p>
+            <p class="EventHeader">The Future of Digital Marketing <br>Webinar</p>
+            <p class="EventParagraph">I’m an event description. Click here to open up the Event Editor and <br> change my text. I’m a great place for you to say a little more about <br> your upcoming event.</p>
+            <button class="sectionregister1 EventButton"><a href="./RegisterForm.html">Register Now</a></button>            
+        </div>
+        <div class="RegisterPicture">
+            <img src="https://static.wixstatic.com/media/c837a6_48a793d429094f85b1d6a244a7a299e9~mv2.jpg/v1/fill/w_979,h_552,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_48a793d429094f85b1d6a244a7a299e9~mv2.jpg" alt="" class="RegisterIMG">
+        </div>
+        <div class="RegisterTime">
+            <p class="TimeBig">Time & Location</p>
+            <p class="TimeSmall">Nov 05, 2035, 6:00 PM <br>
+
+                Marketing Webinar</p>
+        </div>
+        <div class="AboutTheEvent">
+            <p class="TimeBig">About the Event</p>
+            <p class="TimeSmall">I’m an event description. Click here to open up the Event Editor and change my text. Simply click me, Manage Event and start editing <br> your event. I’m a great place for you to say a little more about your upcoming event.</p>
+            <button class="sectionregister1 EventButton"><a href="./RegisterForm.html">Register Now</a></button>
+        </div>
+        <div class="RegisterShare">
+            <p class="TimeBig">Share</p>
+            <div class="ShareIcons">
+                <a href="https://www.facebook.com/wix/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                </a>
+                <a href="https://twitter.com/Wix"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+                <a href="https://www.linkedin.com/company/wix-com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="MailingList">
+            <div class="ML"> 
+                <p class="MLtext">Join our mailing list</p>
+                <div class="InputML">
+                    <input type="text">
+                    <button class="sectionregister1"><a href="">Sign up</a></button>
+                </div>
+            </div>       
+        </div>
+        <div class="CompanyInfo">
+            <div class="Email">
+                <p class="Buzzthrough" style="font-weight: bold;">Buzzthrough</p>
+                <p>For any questions please email <br>
+
+                    info@mysite.com</p>
+            </div>
+            <div class="Website">
+                <p>Visit our website</p>
+            </div>
+            <div class="Location">
+                <p>500 Terry Francine Street <br>
+                    San Francisco, CA 94158</p>
+            </div>
+        </div>
+        <div class="copyright"><p>© 2035 by Buzzthrough. Powered and secured by Wix</p></div>
+    </footer>
 </body>
 </html>

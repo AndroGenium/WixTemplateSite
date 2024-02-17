@@ -139,3 +139,11 @@ html {
 .BurgerMenuItems p a {
   color: white;
 }
+
+.ShareIcons {
+  display: flex;
+  gap: 40px;
+}
+.ShareIcons svg {
+  height: 20px;
+}
